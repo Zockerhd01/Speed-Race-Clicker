@@ -17,6 +17,6 @@ Tab:AddTextbox({
 	Default = "Cutstom Speed",
 	TextDisappear = true,
 	Callback = function(CutstomSpeed)
-		game:GetService("Players").zockerhd26.speedAdd.Value = CutstomSpeed
+		game:GetService("Players").LocalPlayer.speedAdd.Value = CutstomSpeed
 	end	  
 })
