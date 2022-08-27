@@ -1,0 +1,22 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Speed Race Clicker by 1234567#3209", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Custom Speed",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Custom Speed"
+})
+
+Tab:AddTextbox({
+	Name = "Dont Do to much or it breaks",
+	Default = "Cutstom Speed",
+	TextDisappear = true,
+	Callback = function(CutstomSpeed)
+		game:GetService("Players").zockerhd26.speedAdd.Value = CutstomSpeed
+	end	  
+})
